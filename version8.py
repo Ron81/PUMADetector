@@ -8,6 +8,7 @@ cap.set(3,600), cap.set(4,600), cap.set(10,100)
 puma = cv2.imread("Logos/puma_black.png")
 pumaGray = cv2.cvtColor(puma,cv2.COLOR_BGR2GRAY)
 
+
 while(True):
     # Capture frame-by-frame
     ret, frame = cap.read()
@@ -18,9 +19,9 @@ while(True):
 
     # Display Output
     cv2.imshow('Video Output',frame)
-    cv2.imshow('Logo Output', pumaGray)
+    #cv2.imshow('Logo Output', pumaGray)
 
-    # Killswitch = q
+    # exit loop = q
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
