@@ -1,8 +1,8 @@
-#https://www.murtazahassan.com/learn-opencv-3hours/
+# https://www.murtazahassan.com/learn-opencv-3hours/
 import cv2
 import numpy as np
  
-#Combine Images
+# Combine Images
 def stackImages(scale,imgArray):
     rows = len(imgArray)
     cols = len(imgArray[0])
@@ -34,20 +34,23 @@ def stackImages(scale,imgArray):
         ver = hor
     return ver
  
+# Shape Detection
 def getContours(img):
     contours,hierarchy = cv2.findContours(img,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
     for cnt in contours:
         area = cv2.contourArea(cnt)
         print(area)
+      # draw only if the min-size is larger than 500
         if area>500:
+        # first is level, next color-code and last thickness of the line
             cv2.drawContours(imgContour, cnt, -1, (255, 0, 0), 3)
             peri = cv2.arcLength(cnt,True)
-            #print(peri)
+          # instead of drawing exactly the Shape, house it in a rectangle
             approx = cv2.approxPolyDP(cnt,0.02*peri,True)
             print(len(approx))
             objCor = len(approx)
             x, y, w, h = cv2.boundingRect(approx)
- 
+            # 3 corners = Triangle, 4 = Square, more = Circle
             if objCor ==3: objectType ="Tri"
             elif objCor == 4:
                 aspRatio = w/float(h)
