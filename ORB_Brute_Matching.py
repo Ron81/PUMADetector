@@ -6,7 +6,7 @@ cap = cv2.VideoCapture(0)
 cap.set(3,600), cap.set(4,600), cap.set(10,100)
 
 # PUMA Logo Image
-pumaLogo = cv2.imread("Logos/puma_black.png", cv2.IMREAD_GRAYSCALE)
+pumaLogo = cv2.imread("Logos/puma_small.png", cv2.IMREAD_GRAYSCALE)
 
 # Face detector
 faceCascade= cv2.CascadeClassifier("Resources/haarcascade_frontalface_default.xml")
