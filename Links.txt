@@ -1,3 +1,18 @@
+###############################################################################
+! ! ! Newest Shit ! ! !
+ 
+1. Prepare your Training Images: https://www.makesense.ai/
+Best open source image labeling aka annotation tool!
+
+2. Optional: use Roboflow to re-check if you've set your Lables correct:
+https://www.youtube.com/watch?v=9hVgyeI4g4o
+
+3. Watch Video: How to Train YOLOv4 on a Custom Dataset (PyTorch)
+https://www.youtube.com/watch?v=mKAEGSxwOAY
+
+Side Notes: YOLOv4 expects/works best with multiples of 32 x 32px images!!
+
+###############################################################################
 good Reads:
 
 Heatmap for Logo Detection using OpenCV (Python)
