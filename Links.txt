@@ -5,12 +5,14 @@
 Best open source image labeling aka annotation tool!
 
 2. Optional: use Roboflow to re-check if you've set your Lables correct:
+How to Train YOLOv4 on a Custom Dataset (PyTorch)
 https://www.youtube.com/watch?v=9hVgyeI4g4o
+Warning: Only up to 1.000 images are free(!), above is payed service
 
-3. Watch Video: How to Train YOLOv4 on a Custom Dataset (PyTorch)
-https://www.youtube.com/watch?v=mKAEGSxwOAY
+3. Watch Video: Train YOLO to detect a custom object
+https://www.youtube.com/watch?v=_FNfRtXEbr4
 
-Side Notes: YOLOv4 expects/works best with multiples of 32 x 32px images!!
+Side Notes: YOLOv4 expects/works best with multiples of 32 x 32px images!!!
 
 ###############################################################################
 good Reads:
